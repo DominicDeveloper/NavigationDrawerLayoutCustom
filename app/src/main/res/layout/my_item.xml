@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/myCardView"
+    android:padding="13dp"
+    app:cardCornerRadius="0dp"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="13dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewImage"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="60dp"
+            app:cardCornerRadius="30dp"
+            android:layout_height="60dp">
+            <ImageView
+                android:src="@drawable/user"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            app:layout_constraintLeft_toRightOf="@id/cardViewImage"
+            app:layout_constraintTop_toTopOf="@id/cardViewImage"
+            app:layout_constraintRight_toLeftOf="@id/myCardddMsg"
+            android:layout_width="0dp"
+            android:layout_marginStart="13dp"
+            android:text="Dominic"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/itemUserName"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/itemUserMessage"
+            app:layout_constraintTop_toBottomOf="@id/itemUserName"
+            app:layout_constraintLeft_toRightOf="@id/cardViewImage"
+            app:layout_constraintBottom_toBottomOf="@id/cardViewImage"
+            app:layout_constraintRight_toLeftOf="@id/myCardddMsg"
+            android:layout_marginStart="13dp"
+            android:text="Android dasturlash"
+            android:textColor="@color/black"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/myCardddMsg"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintHorizontal_bias="0.95"
+            android:layout_width="20dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
+            android:layout_height="20dp">
+
+            <TextView
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:text="1"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.cardview.widget.CardView>
